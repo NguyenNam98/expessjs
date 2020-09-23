@@ -1,28 +1,19 @@
 {
   "users": [
     {
-      "name": "nguyễn văn Nam",
-      "id": "ca4Eq4-eE"
-    },
-    {
-      "name": "vũ ngọc",
-      "id": "XRnx9gwQy"
-    },
-    {
-      "name": "hoang",
-      "id": "5qpXnvswX"
-    },
-    {
-      "name": "16520775",
-      "id": "Jp-vgolI3"
+      "name": "nguyen van hong",
+      "phoneNumber": "09263232",
+      "id": "Yz6WC68i1"
     },
     {
       "name": "nguyễn văn Nam",
-      "id": "UhkK0rFna"
+      "phoneNumber": "09263232",
+      "id": "vHYEOAHav"
     },
     {
-      "name": "nguyen ngọc",
-      "id": "qNJmOoFvl"
+      "name": "",
+      "phoneNumber": "",
+      "id": "iuqXSO-I_"
     }
   ]
 }

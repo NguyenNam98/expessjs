@@ -1,6 +1,6 @@
 const bodyParser = require('body-parser');
 const express = require('express');
-
+const db=require("./views/db");
 const userRoute=require('./routes/user.route');
 const app=express();
 const port=3000;
@@ -11,6 +11,16 @@ app.set('view engine', 'pug');
 app.set('views', './views');
 
 app.use('/users',userRoute);
+
+app.use(express.static('public'));
+
+app.get('/',function(req,res){
+ 
+    var user= db.get("users").value();
+    res.render('users/index',{
+        users:user
+    });
+});
 
 app.listen(port,function(){
     console.log("listen at http://localhost:"+port);
