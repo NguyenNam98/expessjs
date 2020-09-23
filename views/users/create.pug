@@ -1,5 +1,7 @@
-h1 CREATE PAGE
-form(action="/users/create",method="POST")
-    label Name
-    input(type="text",name="name")
-    button Create
+extends ../layout/common 
+block content
+    h1 CREATE PAGE
+    form(action="/users/create",method="POST")
+      label Name
+      input(type="text",name="name")
+      button Create
