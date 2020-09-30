@@ -1,24 +1,11 @@
 {
   "users": [
     {
-      "name": "nguyen van hong",
-      "phoneNumber": "09263232",
-      "id": "Yz6WC68i1"
-    },
-    {
       "name": "nguyễn văn Nam",
       "phoneNumber": "09263232",
-      "id": "vHYEOAHav"
-    },
-    {
-      "name": "",
-      "phoneNumber": "",
-      "id": "iuqXSO-I_"
-    },
-    {
-      "name": "nguyễn văn Nam",
-      "phoneNumber": "09263232",
-      "id": "joixURQh2"
+      "id": "vHYEOAHav",
+      "email": "michalnam@gmail.com",
+      "passWord": "123456"
     },
     {
       "name": "nguyen van a",

@@ -1,10 +1,11 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-var controller=require("../controller/user.controller");
+const controller=require("../controller/user.controller");
 const shortid = require('shortid');
-var db=require('../views/db');
+const db=require('../views/db');
 const validate=require('../validate/user.validate');
+const requireLogin=require('../midleware/auth');
 
 router.get('/',controller.index);
 
