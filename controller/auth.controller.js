@@ -23,7 +23,9 @@ module.exports.postLogin=function(req,res){
         });
         return;
     }
-    res.cookie('customerId',user.id);
+    res.cookie('customerId',user.id,{
+        signed :true
+    });
     res.redirect('/users');
 
 };

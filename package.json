@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
     "expess": "0.0.1-security",
     "express": "^4.17.1",
     "lowdb": "^1.0.0",
