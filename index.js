@@ -8,6 +8,7 @@ const db=require("./views/db");
 const userRoute=require('./routes/user.route');
 const authRoute=require('./routes/auth.route');
 const requireLogin=require('./midleware/auth');
+const productRoute=require('./routes/product.route');
 
 const app=express();
 const port=3000;
@@ -20,6 +21,7 @@ app.set('view engine', 'pug');
 app.set('views', './views');
 
 app.use('/users',requireLogin.requireAuth,userRoute);
+app.use('/',productRoute);
 
 app.use(express.static('public'));
 
