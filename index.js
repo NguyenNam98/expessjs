@@ -21,7 +21,7 @@ app.use('/users',requireLogin.requireAuth,userRoute);
 
 app.use(express.static('public'));
 
-app.get('/',function(req,res){
+app.get('/',requireLogin.requireAuth,function(req,res){
  
     var user= db.get("users").value();
     res.render('users/index',{

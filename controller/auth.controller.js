@@ -1,3 +1,5 @@
+const md5=require('md5');
+
 var db=require('../views/db');
 
 module.exports.login=function(req,res){
@@ -14,7 +16,8 @@ module.exports.postLogin=function(req,res){
      });
      return;
     }
-    if(user.passWord!== passWord){
+    var hashedPassword=md5(passWord);
+    if(user.passWord!== hashedPassword){
         res.render('auth/login',{
            errors:['wrong password !']
         });
