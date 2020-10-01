@@ -4,11 +4,15 @@ block content
       each error in errors
         .alert.alert-danger=error
     h1 CREATE PAGE
-    form(action="/users/create",method="POST")
+    form(action="/users/create",method="POST",enctype="multipart/form-data")
       .form-group
         label(for="name") Name
         input.form-control(type="text",name="name",id="name",value=values ? values.name:'')
       .form-group
         label(for="phoneNumber") Phone Number
         input.form-control(type="text",name="phoneNumber",id="phoneNumber",value=values ? values.phoneNumber:'')
+      .form-group
+        label(for="avatar") Avatar
+        input.form-control-file(type="file",name="avatar",id="avatar")
       button.btn.btn-primary Create
+        
