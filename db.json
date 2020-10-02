@@ -621,5 +621,14 @@
       "name": "Shrimp - Black Tiger 26/30",
       "description": "diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus sapien ut"
     }
+  ],
+  "sessions": [
+    {
+      "id": "7CD2S5hYK",
+      "cart": [
+        null,
+        5
+      ]
+    }
   ]
 }
