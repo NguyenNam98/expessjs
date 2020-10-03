@@ -1,4 +1,5 @@
 const db = require('../views/db');
+const Sessions= require('../models/session.model');
 
 module.exports.addToCart = function(req,res){
     var productId = req.params.productId;
@@ -9,7 +10,7 @@ module.exports.addToCart = function(req,res){
     }
     var count = db.get("sessions")
     .find({id:sessionId})
-    .get('cart.'+productId,0)
+    .get('cart.'+ productId, 0)
     .value();
     db.get("sessions")
     .find({id:sessionId})

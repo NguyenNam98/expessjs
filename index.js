@@ -3,6 +3,7 @@ require('dotenv').config();
 const bodyParser = require('body-parser');
 const express = require('express');
 const cookieParser = require('cookie-parser')
+const mongoose = require('mongoose');
 
 const cartRoute=require('./routes/cart.route');
 const db=require("./views/db");
@@ -11,6 +12,9 @@ const authRoute=require('./routes/auth.route');
 const requireLogin=require('./midleware/auth');
 const productRoute=require('./routes/product.route');
 const sessionMidleware=require('./midleware/session.midleware');
+
+
+mongoose.connect(process.env.MONGO_URL);
 
 const app=express();
 const port=3000;
